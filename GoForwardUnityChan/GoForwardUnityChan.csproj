@@ -86,8 +86,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\BackgroundController.cs" />
+    <Compile Include="Assets\BlockSoundController.cs" />
     <Compile Include="Assets\CubeController.cs" />
     <Compile Include="Assets\CubeGenerator.cs" />
+    <Compile Include="Assets\UIController.cs" />
     <Compile Include="Assets\UnityChan2D\Demo\Scripts\AudioSourceController.cs" />
     <Compile Include="Assets\UnityChan2D\Demo\Scripts\BlockController.cs" />
     <Compile Include="Assets\UnityChan2D\Demo\Scripts\BrokenBlockController.cs" />

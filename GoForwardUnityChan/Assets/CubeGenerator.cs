@@ -3,6 +3,9 @@ using System.Collections;
 
 public class CubeGenerator : MonoBehaviour
 {
+    // AudioSorceを格納する変数の宣言.
+    private AudioSource audioSource;		
+
     // キューブのPrefab
     public GameObject cubePrefab;
 
@@ -56,4 +59,15 @@ public class CubeGenerator : MonoBehaviour
             this.span = this.offsetX + this.spaceX * n;
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "block")
+        {
+            audioSource = gameObject.GetComponent<AudioSource>();
+            audioSource.Play();
+        }
+    }
+
+
 }
