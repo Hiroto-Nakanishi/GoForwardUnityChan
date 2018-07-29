@@ -18,10 +18,10 @@ public class BlockSoundController : MonoBehaviour {
 	}
 
     //ぶつかったときの音
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (tag == "GROUND")
-        {
+        if (collision.gameObject.tag == "GROUND"　|| collision.gameObject.tag == "BLOCK")
+            {
             audioSource.Play();
         }
     }
